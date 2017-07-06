@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Try it yourself</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div></div>
+    <script>
+      if (window.opener && typeof window.opener.parentHandler === 'function')
+        window.opener.parentHandler.call(null, window.location.href);
+      window.close();
+    </script>
+  </body>
+</html>
